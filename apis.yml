@@ -1,7 +1,16 @@
 aid: ello
 name: Ello
-description: 'Ello is a company surfaced as a portfolio company of homebrew and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Ello is a public-benefit AI education company building a 1:1 AI reading and
+  math tutor for children ages 4-9. Its consumer app pairs proprietary
+  child-speech recognition (trained on 100K+ hours of kids' audio) with
+  generative AI and adaptive teaching agents to deliver personalized,
+  sub-second, voice-based reading instruction grounded in the Science of
+  Reading, plus a large catalog of leveled e-books, a "Storytime"
+  create-your-own story feature, and parent progress reports. Recognized as one
+  of TIME's Best Inventions of 2024 and backed by Y Combinator, Goodwater,
+  Project A, and Homebrew, Ello is a consumer (B2C) product with no public
+  developer API program at this time.
 url: https://raw.githubusercontent.com/api-evangelist/ello/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,12 +18,31 @@ x-backed-by:
 - homebrew
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://cdn.sanity.io/images/syk5spr9/production/ec494ad4e15d0f28ec8b04d522147735034ba902-1200x630.webp
 tags:
 - Company
 - Ai
+- Education
+- EdTech
+- Reading
+- Literacy
+- Speech Recognition
+- Children
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +50,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ello-domain-security.yml
 - type: Website
   url: https://www.ello.com
+- type: About
+  url: https://www.ello.com/about
+- type: SignUp
+  url: https://www.ello.com/join-waitlist
+- type: Support
+  url: https://www.ello.com/contact
+- type: TermsOfService
+  url: https://www.ello.com/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.ello.com/legal/privacy-policy
+- type: Careers
+  url: https://jobs.ashbyhq.com/ello
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,21 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of /.well-known/ on the ello.com hosts
+host: https://www.ello.com
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  No /.well-known/ discovery documents are published. Ello is a consumer
+  (B2C) AI reading/math app for children ages 4-9 with no public developer
+  API program, so no OIDC/OAuth/api-catalog surface exists. Recorded as a
+  negative (all-404) audit result; no WellKnown pointer is wired because no
+  document was found.
